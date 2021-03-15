@@ -7,14 +7,6 @@
     <script src="https://kit.fontawesome.com/a4590dae2d.js" crossorigin="anonymous"></script>
     <title>Country Lookup</title>
     <style>
-        * {
-          box-sizing: border-box;
-        }
-        
-        body {
-          font: 16px Arial;  
-        }
-
         .autocomplete {
           position: relative;
           display: inline-block;
@@ -34,6 +26,7 @@
           padding: 10px;
           cursor: pointer;
           border-bottom: 1px solid #d4d4d4; 
+          background-color: #222222; 
         }
         .autocomplete-items div:hover {
           background-color: #373737; 
@@ -55,7 +48,7 @@
                     <div class="input-group mb-2">
                         <input type="text" id="search" class="form-control form-control-lg" placeholder="Enter country name...">
                         <div class="input-group-append">
-                            <input type="submit" class="btn btn-primary">
+                            <button id="submit-btn" type="button" class="btn btn-primary"><i class="fas fa-search"></i></button>
                         </div>
                     </div>
                 </div>
@@ -65,7 +58,7 @@
         <div class="row">
             <div class="col-md-6 m-auto">
                 <p class="text-center mb-3">
-                    Using restcountires.eu!
+                    Using restcountries.eu!
                 </p>
             </div>
         </div>
